@@ -1,0 +1,201 @@
+/* Main styles */
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
+/* ================================= 
+  Base Styles
+==================================== */
+* {
+  box-sizing: border-box;
+  font-family: Sen, "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #3a3a3a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  font-size: 0.95em;
+}
+
+a {
+  color: #575955;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---- Navigation ---- */
+.active {
+  background-color: rgba(140, 140, 140, 0.36);
+  border-radius: 5px;
+}
+
+.main-header {
+  padding-top: 0.35em;
+  padding-bottom: 0.35em;
+}
+
+.name {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.main-nav {
+  font-size: 2em;
+  margin: 0;
+}
+
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.main-nav a:hover {
+  color: #32673f;
+}
+
+/* ---- Banner ---- */
+
+.banner {
+  text-align: center;
+  color: #fff;
+  background: #6da34d;
+  padding: 1em 0;
+}
+
+.logo {
+  width: 132px;
+}
+
+.headline {
+  margin-bottom: 0;
+  font-size: 35px;
+}
+
+/* ---- Content ---- */
+.portfolio {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.project-content {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.project {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.project:hover {
+  opacity: 1;
+}
+
+.calendar {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* ---- Footer ---- */
+
+.main-footer {
+  text-align: center;
+  background: #d9e4ea;
+  padding: 1.5em 0;
+  margin-top: 30px;
+}
+
+.footer-inner {
+  margin-top: 10px;
+}
+
+.twitter,
+.facebook,
+.linkedin {
+  color: gray;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.facebook:hover {
+  color: #4267b2;
+}
+
+.linkedin:hover {
+  color: #2867b2;
+}
+
+.main-content {
+  flex: 1;
+  margin: 0 15px;
+}
+
+iframe {
+  border-width: 0px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+  .main-header,
+  .main-content {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
+  .tagline {
+    font-size: 1.4em;
+  }
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 2em;
+  }
+
+  .main-nav {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .portfolio {
+    display: flex;
+  }
+
+  .project {
+    width: 260px;
+    height: 180px;
+  }
+}
